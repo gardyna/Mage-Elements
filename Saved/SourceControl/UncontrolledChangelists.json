@@ -13,7 +13,12 @@
 				"/Users/Shared/Documents/Unreal Projects/MageGame/Content/Blueprints/Environment/BP_SpellTarget.uasset",
 				"/Users/Shared/Documents/Unreal Projects/MageGame/Content/__ExternalActors__/FirstPerson/Lvl_FirstPerson/A/CU/85MZF9YXKLJ7LWJUPLWPLO.uasset",
 				"/Users/Shared/Documents/Unreal Projects/MageGame/Content/Blueprints/Environment/BP_PhysicsTarget.uasset",
-				"/Users/Shared/Documents/Unreal Projects/MageGame/Content/__ExternalActors__/FirstPerson/Lvl_FirstPerson/1/Q1/87YDC0LE7CFERSBZTQCFVR.uasset"
+				"/Users/Shared/Documents/Unreal Projects/MageGame/Content/__ExternalActors__/FirstPerson/Lvl_FirstPerson/1/Q1/87YDC0LE7CFERSBZTQCFVR.uasset",
+				"/Users/Shared/Documents/Unreal Projects/MageGame/Content/UI/WBP_Reticle.uasset",
+				"/Users/Shared/Documents/Unreal Projects/MageGame/Content/FirstPerson/Blueprints/BP_FirstPersonPlayerController.uasset",
+				"/Users/Shared/Documents/Unreal Projects/MageGame/Content/Blueprints/Spells/M_ArcaneBolt.uasset",
+				"/Users/Shared/Documents/Unreal Projects/MageGame/Content/Blueprints/Spells/MI_ArcaneBolt.uasset",
+				"/Users/Shared/Documents/Unreal Projects/MageGame/Content/Blueprints/Spells/NS_ArcaneBolt.uasset"
 			]
 		}
 	]
