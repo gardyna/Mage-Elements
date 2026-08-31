@@ -13,6 +13,8 @@
 	GAMEPLAYATTRIBUTE_VALUE_SETTER(PropertyName) \
 	GAMEPLAYATTRIBUTE_VALUE_INITTER(PropertyName)
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FMageOnDeath, AActor*, OwningActor);
+
 UCLASS()
 class MAGEGAME_API UMageAttributeSet : public UAttributeSet
 {
@@ -40,6 +42,9 @@ public:
 	FGameplayAttributeData MaxMana;
 	ATTRIBUTE_ACCESSORS(UMageAttributeSet, MaxMana)
 	
+	UPROPERTY(BlueprintAssignable, Category = "Vitals")
+	FMageOnDeath OnDeath;
+	
 	UPROPERTY(BlueprintReadOnly, Category = "Movement")
 	FGameplayAttributeData MoveSpeed;
 	ATTRIBUTE_ACCESSORS(UMageAttributeSet, MoveSpeed)
@@ -48,5 +53,8 @@ public:
 	UPROPERTY(BlueprintReadOnly, Category = "Meta")
 	FGameplayAttributeData IncomingDamage;
 	ATTRIBUTE_ACCESSORS(UMageAttributeSet, IncomingDamage)
+	
+private:
+	bool bIsDead = false;
 	
 };
