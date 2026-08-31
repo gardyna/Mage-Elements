@@ -44,7 +44,7 @@ void UMageAttributeSet::PostGameplayEffectExecute(const struct FGameplayEffectMo
 		{
 			SetHealth(FMath::Clamp(GetHealth() - LocalDamage, 0.0f, GetMaxHealth()));
 			GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, FString::Printf(TEXT("HEALTH: %f"), GetHealth()));
-			if (!bIsDead && GetHealth() <= 0.01f)
+			if (!bIsDead && GetHealth() <= 0.0f)
 			{
 				GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, TEXT("DEAD!!!"));
 				bIsDead = true;
